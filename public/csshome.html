@@ -1,0 +1,69 @@
+<html>
+<title>Origami Social Network Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body onload="checkcookie()">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="/2019mjones/csslogin.html" class="w3-bar-item w3-button"><b>Origami</b> Social Networking</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+            <a href="/2019mjones/cssmainpage.html" class="w3-bar-item w3-button">Main Page</a>
+      <a href="/2019mjones/csslogin.html#login" class="w3-bar-item w3-button">Login</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<!--<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">-->
+<!--  <img class="w3-image" src="origami-paper-art-142.jpg" alt="Origami" width="1500" height="800">-->
+<!--  <div class="w3-display-middle w3-margin-top w3-center">-->
+<!--    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Origami</b></span> <span class="w3-hide-small w3-text-light-grey">Social Networking</span></h1>-->
+<!--  </div>-->
+<!--</header>-->
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Login Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 id = "myUsername" class="w3-border-bottom w3-border-light-grey w3-padding-16">Login</h3>
+  </div>
+
+  <div class="w3-row-padding-32">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">
+        <div id = "buttonfirst">
+       </div>
+       <p id = "listofusers"></p>
+        <p id = "postarea"><b></b></p>
+    <p id = "privatepostarea"><b></b></p>
+    <p id = "filetext">Enter Crease Pattern or Image</p><input type = "file"  id = "fileinput"><button id = 'uploadbutton' class = 'w3-button w3-black' type="button" onclick="upload()">upload</button><button id = 'deletebutton' type="button" class = 'w3-button w3-black' onclick="deletefile()">delete file</button>
+    <br><select id = "dropdownmenu" name = "dropdownmenu" onchange="fileselect(this)"></select>
+    <br>
+
+        </div>
+        </div>
+
+<br><br><br><br><br><br><br><br>
+           <img id = "img1" width = "1024" height = "768" >
+    <canvas id = "canvas1" width = "1024" height = "768" style="border:1px solid #d3d3d3;">
+		your browser does not support HTML canvas</canvas>
+     
+
+      </div>
+
+  
+<!-- End page content -->
+</div>
+</div>
+<script src="socket.io/socket.io.js"></script>
+<script src="js/clientcss.js"></script>
+<script src="js/md5.js"></script>
+<script src="js/localdatacss.js"></script>
+</body>
+</html>

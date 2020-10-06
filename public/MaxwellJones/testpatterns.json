@@ -1,0 +1,14 @@
+[
+{
+"startx":0,
+"endx":1024,
+"starty":384,
+"endy":384
+},
+{
+"startx":512,
+"endx":512,
+"starty":0,
+"endy":768
+}
+]

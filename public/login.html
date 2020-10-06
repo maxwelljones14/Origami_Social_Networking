@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+               <link rel = "stylesheet" href = "styles.css">
+        <meta charset="utf-8">
+        <title >Origami social website</title>
+        <meta name="description" content="Maxwell website 2.0">
+        <meta name="author" content="Maxwell Jones">
+    </head>
+    <body onload="clear()">
+        <h1 id = "myUsername">origami social website</h1>
+          <h2 id = "letsnotplay">Make a username and password(dont use a password you use for anything important)</h2>
+        
+        <p> <div id="prompt">if you already have a username and id, enter them. If not, click <button id = 'makeloginbutton' type="button" onclick="makeTheLogin()">here</button></div>
+        <p>
+        <p><div id="Userprompt"></div>
+        <p><div id="Userallowed"></div>
+        <input type="text" class="form-control" style="text-transform:capitalize;" id="Userinput"  placeholder="Username">
+        <p><div id="Passprompt"></div>
+        <input type="password" class="form-control" style="text-transform:capitalize;" id="Passinput"  placeholder="Password">
+        <p>
+        <button id = 'loginbutton' type="button" onclick="goToGame()">enter</button></p>
+       <div id = "buttonfirst">
+       </div>
+       <p id = "listofusers"></p>
+
+        <p id = "postarea"><b></b></p>
+    <p id = "privatepostarea"><b></b></p>
+    <p id = "filetext">enter crease pattern</p><input type = "file" id = "fileinput"><button id = 'uploadbutton' type="button" onclick="upload()">upload</button><button id = 'deletebutton' type="button" onclick="deletefile()">delete file</button>
+
+
+    
+    <br><select id = "dropdownmenu" name = "dropdownmenu" onchange="fileselect(this)"></select>
+    <br>
+    <img id = "img1" width = "1024" height = "768" >
+    <canvas id = "canvas1" width = "1024" height = "768" style="border:1px solid #d3d3d3;">
+		your browser does not support HTML canvas</canvas>
+      
+       
+
+       <script src="socket.io/socket.io.js"></script>
+       <script src="js/client.js"></script>
+              <script src="js/md5.js"></script>
+       <script src="js/localdata.js"></script>
+    </body>
+</html>
